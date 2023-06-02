@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <!-- Es importante utilizar la codificación UTF-8, ya que te permite mostrar correctamente caracteres especiales, acentos, símbolos y caracteres de diferentes idiomas en tu página web. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- si el usuario está utilizando una versión anterior de Internet Explorer, esta etiqueta asegura que el navegador renderice el documento con la versión más actualizada de compatibilidad. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- se utiliza para controlar cómo se visualiza y se ajusta el contenido en dispositivos móviles
+    El atributo name="viewport" especifica que estamos configurando las propiedades de la ventana de visualización del navegador. El atributo content="width=device-width, initial-scale=1.0" establece dos propiedades importantes:
+
+    width=device-width: Esta propiedad establece el ancho del viewport (ventana de visualización) para que coincida con el ancho del dispositivo en el que se está mostrando la página. Esto asegura que el contenido se ajuste correctamente al ancho de la pantalla del dispositivo.
+
+    initial-scale=1.0: Esta propiedad establece el nivel de escala inicial del viewport. Un valor de 1.0 indica que el contenido se mostrará a escala 1:1, sin zoom. Esto evita que el navegador realice un zoom automático en el contenido y asegura que se muestre en su tamaño original. -->
+
+    <title>Proyecto Integrador</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/7823139b18.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bodyhome">
+    
+    <!-- Header -->
+    <header class="headers">
+        <div class="contenedorheaders">
+            <nav class="paginas">
+                    <a href="./genres.html" class="paginasindiv">Géneros</a>
+                    <a href="./playlist.html" class="paginasindiv">Playlist</a>
+            </nav>
+
+            <a href="./index.html" class="logo"><img src="./img/logo.jpg" alt="logo" class="logo"></a>
+
+            <div class="buscadorheader">
+                <form action="./search-results.html" class="buscador" method="get"> 
+                    <!-- método GET envía los datos usando la URL, el método POST los envía de forma que no podemos verlos en la URL. -->
+                    <input id="busqueda" type="text" name="buscar" placeholder="Buscar">
+                    <div>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+
+                <p class="usuario"> 
+                    Bienvenido Usuario!
+                </p>
+
+            </div>
+            
+        </div>
+    </header>
+    <!-- Main -->
+    <main class="mainhome">
+        <!-- CANCIONES -->
+        <div class="tituloseccionpadrecentrar">
+            <div class="tituloseccionpadrecanciones">
+                <h3 class="tituloseccion titulosecciontop">
+                    Canciones
+                </h3>
+            </div>
+        </div>
+       
+        <section>
+            <article class="contenedordiscos">
+            </article>
+        </section>
+        
+        <!-- DISCOS -->
+        <section>
+            <div class="tituloseccionpadrecentrar">
+                <div class="tituloseccionpadrediscos">
+                    <h3 class="tituloseccion titulosecciontop">
+                        Discos/Albumes
+                    </h3>
+                </div>
+            </div>
+            <article class="contenedoralbumes">
+            </article>
+        </section>
+
+        <!-- BANDAS -->
+        <section>
+            <div class="tituloseccionpadrecentrar">
+                <div class="tituloseccionpadreartista">
+                    <h3 class="tituloseccion titulosecciontop">
+                        Bandas/Artistas
+                    </h3>
+                </div>
+            </div>
+            <article class="contenedoralbumes2">
+            </article>
+        </section>
+    </main>
+    <!--  -->
+    <footer class="footers">
+        <div class="contenedornombres">
+            <h5 class="nombresalumnos">
+                Federico Vitale
+            </h5>
+            <h5 class="nombresalumnos">
+                Ignacio Aracena
+            </h5>
+            <h5 class="nombresalumnos">
+                Alejo Corti
+            </h5>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>
